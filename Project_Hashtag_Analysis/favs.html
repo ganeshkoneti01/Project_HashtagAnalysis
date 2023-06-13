@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+background:url("https://ajr.org/wp-content/uploads/2014/06/no-tweet-blink-cursor.gif");
+background-size:1300px 660px;
+background-repeat:repeat;
+}
+</style>
+</head>
+<body>
+</body>
+</html>
+%for index, t in data.iterrows():   				                   		                                                                  
+	<h3> Full Text: </h3>{{ t['full_text']}}<br>
+	<h3> Retweet count:</h3>{{ t['retweet_count']}}<br>
+	<h3> Favorite count:</h3>{{ t['favorite_count']}}<br>
+	<h3> User id:</h3> {{ t['id']}}<br>
+	<h3> Follower count:</h3>{{ t['user']['followers_count']}}<br>
+	<br>
+	<h3>--------------------------------------------------------------------------------------------------------------------------------------------------------------------------</h3>
+	<br>
+%end
+
+
